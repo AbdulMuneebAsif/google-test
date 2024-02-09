@@ -1,0 +1,41 @@
+<?xml version = "1.0" encoding = "utf-8" ?> 
+
+<!--********** Copyright 2016 Roku Corp.  All Rights Reserved. **********-->
+
+<component name = "KeyboardExample" extends = "Group" initialFocus = "KeyboardExample" >
+
+<interface>
+    <field id="userTyped" type="String" alwaysNotify = "true"/>
+        <field id="content" type="String" alwaysNotify = "true"/>
+</interface>
+
+<script type="text/brightscript" uri="KeyboardExample.brs" />
+<script type="text/brightscript" uri="../UILogic/ScreenStackLogic.brs" />
+
+
+
+
+  <children >
+
+    <Keyboard 
+    
+        id = "KeyboardExample" 
+    
+    />
+
+    <Button 
+        id = "exampleButton" 
+        text = "OK"
+        MinWidth = "40"
+        height = "50"
+        translation = "[550, 550]"
+        showFocusFootprint = "true"
+        focusable = "true"
+        renderTracking = "enabled"
+        
+
+    />
+    
+  </children>
+
+</component>

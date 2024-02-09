@@ -1,0 +1,20 @@
+<?xml version = "1.0" encoding = "utf-8" ?>
+
+<component name = "VideoExample" extends = "Group" initialFocus="exampleVideo">
+  <interface>
+    <field id="state" type="String" alwaysNotify = "true"/>
+</interface>
+
+<script type="text/brightscript" uri="VideoExample.brs" />
+
+  <children >
+
+    <Video 
+
+      id = "exampleVideo"
+
+    />
+
+  </children>
+
+</component>
